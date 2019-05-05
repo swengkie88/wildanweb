@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 12pt;
+    overflow-x: hidden;
+}
+.banner{
+    background: url('../img/background/banner.png') no-repeat;
+    background-size: cover;
+    background-position: 70% 20%;
+    /* display: inline-block; */
+    float: left;
+    width: 50%;
+    height: 656px;
+}
+.jumbotron{
+    padding: 9% 0;
+    float: right;
+    width: 50%;
+    height: 100%;
+}
+
+.center{
+    text-align: center;
+}
+#jumbotron-text h1{
+    color: #3a4352;
+    font-size: 3em;
+    letter-spacing: 1px;
+
+}
+#social-icon{
+    margin: 20px 0px;
+    display: block;
+}
+#social-icon a{
+    color: #1086db;
+    font-size: 1.30em;
+    margin: 0px 10px;
+}
+@media(max-width: 768px){
+    .jumbotron{
+        display: block;
+        float: none;
+        padding: 30% 0;
+        width: 100%;
+    }
+    .banner{
+        background-position: 50% 0;
+        display: block;
+        float: none;
+        width: 100%;
+    }
+    #jumbotron-text h1{
+        font-size: 2.75em;
+        line-height: 1;
+    }
+    #jumbotron-text p{
+        max-width: 80%;
+        margin: 0 auto;
+    }
+}
