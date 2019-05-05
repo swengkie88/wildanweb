@@ -14,6 +14,13 @@ body{
     position: absolute;
     z-index: -1;
 }
+.filter-banner{
+    background: rgba(0, 0, 0, 0.3);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+}
 .banner{
     background: url('../img/background/banner.png') no-repeat;
     background-size: cover;
@@ -25,8 +32,11 @@ body{
     position: relative;
     overflow: hidden;
 }
+.banner-text-mobile{
+   display: none;
+}
 .jumbotron{
-    padding: 9% 0;
+    padding: 10% 0;
     float: right;
     width: 50%;
     height: 100%;
@@ -89,6 +99,95 @@ body{
         width: 100%;
         height: 556px;
     }
+    .banner-text-mobile{
+        display: block;
+        margin:  48% auto;
+        max-width: 70%;
+        position: relative;
+        text-align: center;
+        text-shadow: 0 0 10px #1086db59;;
+        z-index: 2;
+    }
+    .banner-text-mobile{
+        color: #fff;
+    }
+    .banner-text-mobile h1{
+        font-size: 2.5em;
+        letter-spacing: 2px;
+        line-height: 1.25;
+        text-transform: uppercase;
+    }
+    .banner-text-mobile p{
+        margin: 10px 0px;
+    }
+    /* Mouse animation */
+    @-webkit-keyframes scroll-inner {
+    from {
+        margin-top: 15%;
+    }
+    to {
+        margin-top: 50%;
+    }
+    }
+    @keyframes scroll-inner {
+    from {
+        margin-top: 15%;
+    }
+    to {
+        margin-top: 50%;
+    }
+    }
+    @-webkit-keyframes scroll-mouse {
+    from {
+        margin-top: 0;
+    }
+    to {
+        margin-top: 15px;
+    }
+    }
+    @keyframes scroll-mouse {
+    from {
+        margin-top: 0;
+    }
+    to {
+        margin-top: 15px;
+    }
+    }
+    div.mouse-container {
+    position: relative;
+    display: block;
+    height: 100px;
+    }
+    
+    div.mouse {
+    position: relative;
+    margin: 0 auto;
+    display: block;
+    width: 30px;
+    height: 50px;
+    border: solid 2px #fff;
+    border-radius: 25px;
+    -webkit-animation: scroll-mouse 1.5s;
+    animation: scroll-mouse 1.5s;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    }
+    div.mouse span.scroll-down {
+    display: block;
+    width: 6px;
+    height: 6px;
+    background: #fff;
+    border-radius: 50%;
+    margin: 15% auto auto auto;
+    -webkit-animation: scroll-inner 1.5s;
+    animation: scroll-inner 1.5s;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-timing-function: ease;
+    animation-timing-function: ease;
+    }
+      
+   
     #jumbotron-text h1{
         margin: 14px auto;
         font-size: 2.75em;
