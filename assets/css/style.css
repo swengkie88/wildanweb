@@ -40,6 +40,10 @@ body{
     color: #1086db;
     font-size: 1.30em;
     margin: 0px 10px;
+    transition: 0.5s all;
+}
+#social-icon a:hover{
+    color: #3a4352;
 }
 @media(max-width: 768px){
     .jumbotron{
