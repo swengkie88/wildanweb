@@ -26,11 +26,31 @@ body{
 .center{
     text-align: center;
 }
+.jumbotron img{
+    width: 190px;
+    transition: 0.5s all;
+}
+.jumbotron img:hover{
+    transform: rotate(15deg);
+}
 #jumbotron-text h1{
+    cursor: pointer;
     color: #3a4352;
     font-size: 3em;
     letter-spacing: 1px;
-
+    transition: 0.5s all;
+}
+#jumbotron-text h1:hover{
+    padding: 5px 0;
+    transform: scale(1.05);
+    text-shadow:0 0px 20px #1086db59;
+}
+#jumbotron-text p{
+    color: #8e8e8e;
+    transition: 0.5s all;
+}
+#jumbotron-text p:hover{
+    color: black;
 }
 #social-icon{
     margin: 20px 0px;
